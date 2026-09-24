@@ -121,32 +121,7 @@ const portfolioData = {
       githubUrl: "https://github.com/AAshrafR",
       liveUrl: "https://github.com/AAshrafR"
     },
-    {
-      id: "hospital",
-      title: "Hospital Management System",
-      badge: "Software Architecture",
-      badgeClass: "badge-code",
-      featured: false,
-      category: "data",
-      categoryLabel: "Software Engineering & Systems",
-      icon: "🏥",
-      summary:
-        "Modular Python OOP architecture modeling hospital department hierarchies, patient admissions, and robust transactional JSON file persistence.",
-      tags: ["Python", "OOP Architecture", "SOLID Principles", "JSON Persistence"],
-      problem:
-        "Healthcare software prototypes frequently collapse into fragile, tightly coupled architectures where business logic, persistence layers, and clinical records are mixed together, making maintenance difficult and introducing data corruption risks during updates.",
-      solution:
-        "Engineered a pure object-oriented software system in Python strictly adhering to SOLID design principles. Modeled domain entities (Patients, Doctors, Medical Staff, Departments, Wards) with clean encapsulation and inheritance, backed by a robust transactional JSON-based persistence engine.",
-      features: [
-        "<strong>SOLID OOP Architecture:</strong> Designed decoupled class hierarchies for clean abstraction, testability, and maintainability.",
-        "<strong>Departmental Workflows:</strong> Modeled patient admission, doctor allocation, and medical department lifecycle operations.",
-        "<strong>Reliable JSON State Management:</strong> Atomic read/write serialization preserving clinical state across application restarts."
-      ],
-      results:
-        "Produced a modular, easily extensible healthcare administration framework that allows seamless addition of new clinical departments without modifying core system logic.",
-      githubUrl: "https://github.com/AAshrafR",
-      liveUrl: "https://github.com/AAshrafR"
-    }
+    
   ],
 
   // 3. EDUCATION & SPECIALIZED DIPLOMAS

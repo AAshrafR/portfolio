@@ -14,7 +14,6 @@ Built with semantic HTML5, modern CSS3 (with responsive CSS Grid & Flexbox), and
   - **MClinic:** Medical Clinic Management & Health Monitoring System (Kotlin, MVVM, Firebase).
   - **Post-Meal Glucose Prediction:** Machine Learning regression benchmark with GroupKFold validation.
   - **Ford GoBike Analytics:** End-to-end data pipeline and Dash/Plotly dashboard.
-  - **Hospital Management System:** Modular OOP software architecture.
 - **Interactive Project Filtering:** Filter projects by *All*, *AI & Deep Learning*, *Mobile & Healthcare*, and *Data Science & Systems*.
 - **Impact Metrics:** Highlights GPA 3.66, Grade A Capstone, MSc in AI, and 180+ hours of specialized diplomas.
 - **Education & Diplomas Grid:** Dedicated cards for Benha University MSc, Arab Open University BSc, ITI .NET Full Stack (120 hrs), and Route Academy Android Diploma.
@@ -42,16 +41,8 @@ Both the navigation bar "CV 📄" button and the Hero "Download CV" button autom
 
 ## 🌐 Deploy to GitHub Pages (Free)
 
-1. Create a repository on GitHub (e.g., `portfolio` or `AAshrafR.github.io`).
+1. Create a repository on GitHub (e.g., `portfolio` or `username.github.io`).
 2. Push this project to the `main` branch:
-   ```bash
-   git init
-   git add .
-   git commit -m "Launch enhanced portfolio aligned with CV"
-   git branch -M main
-   git remote add origin https://github.com/AAshrafR/<your-repo-name>.git
-   git push -u origin main
-   ```
 3. In GitHub, navigate to **Settings → Pages**.
 4. Under **Build and deployment**, set Source to **Deploy from a branch**, select branch `main` and folder `/ (root)`.
 5. Click **Save**. Your site will be live within seconds!
