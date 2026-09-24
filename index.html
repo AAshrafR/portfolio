@@ -41,8 +41,8 @@
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
       <a href="#education">Education &amp; Diplomas</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact" class="nav-cta">Contact</a>
       <a href="assets/Abdelmasih_Ashraf_CV.pdf" class="btn-nav-resume" target="_blank" download="Abdelmasih_Ashraf_CV.pdf">
@@ -87,21 +87,11 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
 
-          <a
-            class="btn ghost"
-            href="https://github.com/AAshrafR"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn ghost" href="https://github.com/AAshrafR" target="_blank" rel="noopener noreferrer">
             GitHub ↗
           </a>
 
-          <a
-            class="btn ghost"
-            href="https://linkedin.com/in/abdelmasih-ashraf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn ghost" href="https://linkedin.com/in/abdelmasih-ashraf" target="_blank" rel="noopener noreferrer">
             LinkedIn ↗
           </a>
         </div>
@@ -156,32 +146,10 @@ confidence = evaluate_confidence(output)
       </div>
     </section>
 
-    <!-- ================= IMPACT METRICS ================= -->
+    <!-- ================= IMPACT METRICS (DYNAMIC) ================= -->
     <section class="section metrics-section">
-      <div class="metrics-grid">
-        <div class="metric-card reveal">
-          <div class="metric-value">3.66<span>/4.0</span></div>
-          <div class="metric-label">Bachelor GPA</div>
-          <div class="metric-sub">Arab Open University</div>
-        </div>
-
-        <div class="metric-card reveal">
-          <div class="metric-value">Grade A</div>
-          <div class="metric-label">Graduation Project</div>
-          <div class="metric-sub">AlzCare AI Healthcare</div>
-        </div>
-
-        <div class="metric-card reveal">
-          <div class="metric-value">MSc AI</div>
-          <div class="metric-label">Graduate Studies</div>
-          <div class="metric-sub">Benha University</div>
-        </div>
-
-        <div class="metric-card reveal">
-          <div class="metric-value">180+<span>h</span></div>
-          <div class="metric-label">Specialized Diplomas</div>
-          <div class="metric-sub">ITI &amp; Route Academy</div>
-        </div>
+      <div class="metrics-grid" id="metricsContainer">
+        <!-- Rendered dynamically from metricsData in script.js -->
       </div>
     </section>
 
@@ -237,7 +205,7 @@ confidence = evaluate_confidence(output)
       </div>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- ================= PROJECTS (DYNAMIC) ================= -->
     <section id="projects" class="section">
       <div class="section-heading reveal">
         <p class="eyebrow">02 — FEATURED PROJECTS</p>
@@ -258,184 +226,9 @@ confidence = evaluate_confidence(output)
         <button class="filter-btn" data-filter="data">Data Science &amp; Systems</button>
       </div>
 
-      <div class="projects-grid">
-
-        <!-- PROJECT 01: AlzCare (FLAGSHIP) -->
-        <article class="project-card featured reveal" data-category="ai mobile" data-project-id="alzcare" tabindex="0" role="button" aria-label="View AlzCare project details">
-          <div class="card-top">
-            <span class="card-badge">Grade A Capstone</span>
-            <span class="card-action-hint">Click for Details ↗</span>
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>AlzCare — Android AI Healthcare</h3>
-              <span class="project-mini-icon">🧠</span>
-            </div>
-
-            <p class="project-summary">
-              Early Alzheimer's detection from MRI scans using an on-device quantized CNN model with TensorFlow Lite, integrated into a native Android clinical ecosystem.
-            </p>
-
-            <div class="tags">
-              <span>Deep Learning</span>
-              <span>TensorFlow Lite</span>
-              <span>Kotlin</span>
-              <span>MVVM</span>
-              <span>Firebase</span>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <span class="btn-card-details">
-              Case Study &amp; Problems <span class="arrow">→</span>
-            </span>
-            <div class="card-quick-links">
-              <span class="quick-link-pill">Live / Code</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 02: MClinic -->
-        <article class="project-card reveal" data-category="mobile" data-project-id="mclinic" tabindex="0" role="button" aria-label="View MClinic project details">
-          <div class="card-top">
-            <span class="card-badge badge-mobile">Production Android</span>
-            <span class="card-action-hint">Click for Details ↗</span>
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>MClinic — Medical Clinic Management</h3>
-              <span class="project-mini-icon">📱</span>
-            </div>
-
-            <p class="project-summary">
-              Comprehensive Android clinic platform managing appointments, doctor administration, chronic health metric tracking (glucose, blood pressure), and prescriptions.
-            </p>
-
-            <div class="tags">
-              <span>Kotlin</span>
-              <span>MVVM</span>
-              <span>Firebase</span>
-              <span>Health Tracking</span>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <span class="btn-card-details">
-              Case Study &amp; Problems <span class="arrow">→</span>
-            </span>
-            <div class="card-quick-links">
-              <span class="quick-link-pill">Live / Code</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 03: Post-Meal Glucose Prediction -->
-        <article class="project-card reveal" data-category="ai data" data-project-id="glucose" tabindex="0" role="button" aria-label="View Post-Meal Glucose Prediction project details">
-          <div class="card-top">
-            <span class="card-badge badge-ml">ML Research</span>
-            <span class="card-action-hint">Click for Details ↗</span>
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>Post-Meal Glucose Prediction</h3>
-              <span class="project-mini-icon">📊</span>
-            </div>
-
-            <p class="project-summary">
-              Machine learning predictive model estimating post-prandial glycemic excursions with strict subject-isolated GroupKFold validation and CatBoost benchmarks.
-            </p>
-
-            <div class="tags">
-              <span>Machine Learning</span>
-              <span>CatBoost</span>
-              <span>GroupKFold</span>
-              <span>Scikit-learn</span>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <span class="btn-card-details">
-              Case Study &amp; Problems <span class="arrow">→</span>
-            </span>
-            <div class="card-quick-links">
-              <span class="quick-link-pill">Live / Code</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 04: Ford GoBike Data Analysis -->
-        <article class="project-card reveal" data-category="data" data-project-id="gobike" tabindex="0" role="button" aria-label="View Ford GoBike Data Analysis project details">
-          <div class="card-top">
-            <span class="card-badge badge-data">Data Dashboard</span>
-            <span class="card-action-hint">Click for Details ↗</span>
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>Ford GoBike Analytics &amp; Dashboard</h3>
-              <span class="project-mini-icon">🚴</span>
-            </div>
-
-            <p class="project-summary">
-              End-to-end urban mobility analytics transforming millions of trip records into automated feature pipelines and an interactive Dash/Plotly dashboard.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Plotly &amp; Dash</span>
-              <span>EDA</span>
-              <span>Feature Eng.</span>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <span class="btn-card-details">
-              Case Study &amp; Problems <span class="arrow">→</span>
-            </span>
-            <div class="card-quick-links">
-              <span class="quick-link-pill">Live / Code</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 05: Hospital Management System -->
-        <article class="project-card reveal" data-category="data" data-project-id="hospital" tabindex="0" role="button" aria-label="View Hospital Management System project details">
-          <div class="card-top">
-            <span class="card-badge badge-code">Software Architecture</span>
-            <span class="card-action-hint">Click for Details ↗</span>
-          </div>
-
-          <div class="project-content">
-            <div class="project-title-row">
-              <h3>Hospital Management System</h3>
-              <span class="project-mini-icon">🏥</span>
-            </div>
-
-            <p class="project-summary">
-              Modular Python OOP architecture modeling hospital department hierarchies, patient admissions, and robust transactional JSON file persistence.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>OOP Architecture</span>
-              <span>SOLID</span>
-              <span>JSON State</span>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <span class="btn-card-details">
-              Case Study &amp; Problems <span class="arrow">→</span>
-            </span>
-            <div class="card-quick-links">
-              <span class="quick-link-pill">Live / Code</span>
-            </div>
-          </div>
-        </article>
-
+      <!-- Projects Grid Container -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Rendered dynamically from projectsData in script.js -->
       </div>
     </section>
 
@@ -519,7 +312,7 @@ confidence = evaluate_confidence(output)
       </div>
     </div>
 
-    <!-- ================= EDUCATION & DIPLOMAS ================= -->
+    <!-- ================= EDUCATION & DIPLOMAS (DYNAMIC) ================= -->
     <section id="education" class="section education-section">
       <div class="section-heading reveal">
         <p class="eyebrow">03 — ACADEMIC &amp; CERTIFICATIONS</p>
@@ -532,111 +325,12 @@ confidence = evaluate_confidence(output)
         </p>
       </div>
 
-      <div class="education-grid">
-        <!-- MSC BENHA -->
-        <div class="education-card highlight reveal">
-          <div class="edu-header">
-            <span class="edu-badge live">In Progress</span>
-            <span class="edu-date">Feb 2026 – Present</span>
-          </div>
-          <h3>Master's Degree in Artificial Intelligence</h3>
-          <p class="edu-institution">Benha University · Egypt</p>
-          <p class="edu-desc">
-            Focusing on advanced machine learning algorithms, deep neural network architectures, computer vision, 
-            intelligent systems design, and applied AI research.
-          </p>
-          <div class="edu-tags">
-            <span>Machine Learning</span>
-            <span>Deep Learning</span>
-            <span>AI Research</span>
-            <span>Intelligent Systems</span>
-          </div>
-        </div>
-
-        <!-- BSC AOU -->
-        <div class="education-card reveal">
-          <div class="edu-header">
-            <span class="edu-badge grade">GPA: 3.66 / 4.0</span>
-            <span class="edu-date">Oct 2020 – Jun 2024</span>
-          </div>
-          <h3>Bachelor of Computer Science</h3>
-          <p class="edu-institution">Arab Open University · Egypt</p>
-          <p class="edu-desc">
-            Core foundations in algorithms, data structures, operating systems, and computer architecture. 
-            Graduated with a <strong>Grade A</strong> capstone defense for <em>AlzCare</em>.
-          </p>
-          <div class="edu-tags">
-            <span>Graduation Project: Grade A</span>
-            <span>Computer Science</span>
-            <span>Algorithms</span>
-            <span>OOP</span>
-          </div>
-        </div>
-
-        <!-- ITI FULL STACK .NET -->
-        <div class="education-card reveal">
-          <div class="edu-header">
-            <span class="edu-badge diploma">120 Hours Intensive</span>
-            <span class="edu-date">Aug 2024</span>
-          </div>
-          <h3>Full Stack Web Development (.NET)</h3>
-          <p class="edu-institution">Information Technology Institute (ITI) · Egypt</p>
-          <p class="edu-desc">
-            Comprehensive professional training in backend and web architecture using modern C#, 
-            Entity Framework, ASP.NET MVC, and MySQL relational database management.
-          </p>
-          <div class="edu-tags">
-            <span>C#</span>
-            <span>ASP.NET MVC</span>
-            <span>Entity Framework</span>
-            <span>MySQL</span>
-          </div>
-        </div>
-
-        <!-- ROUTE ACADEMY ANDROID -->
-        <div class="education-card reveal">
-          <div class="edu-header">
-            <span class="edu-badge diploma">Professional Diploma</span>
-            <span class="edu-date">May 2023 – Oct 2023</span>
-          </div>
-          <h3>Android Development Diploma</h3>
-          <p class="edu-institution">Route Academy</p>
-          <p class="edu-desc">
-            Professional mobile engineering covering Kotlin, XML UI layouts, MVVM architecture, 
-            Data Binding, Room SQLite database, Firebase Auth/Firestore, and Git version control.
-          </p>
-          <div class="edu-tags">
-            <span>Kotlin</span>
-            <span>Android SDK</span>
-            <span>MVVM</span>
-            <span>Room DB</span>
-            <span>Firebase</span>
-          </div>
-        </div>
-
-        <!-- ITI WEB TECH -->
-        <div class="education-card reveal">
-          <div class="edu-header">
-            <span class="edu-badge diploma">60 Hours Intensive</span>
-            <span class="edu-date">Aug 2021</span>
-          </div>
-          <h3>Introduction to Web Technologies</h3>
-          <p class="edu-institution">Information Technology Institute (ITI) · Egypt</p>
-          <p class="edu-desc">
-            Foundational training in modern front-end web standards, responsive design, semantic HTML5, 
-            CSS styling, and DOM manipulation with vanilla JavaScript.
-          </p>
-          <div class="edu-tags">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Web Standards</span>
-          </div>
-        </div>
+      <div class="education-grid" id="educationContainer">
+        <!-- Rendered dynamically from educationData in script.js -->
       </div>
     </section>
 
-    <!-- ================= EXPERIENCE ================= -->
+    <!-- ================= EXPERIENCE (DYNAMIC) ================= -->
     <section id="experience" class="section experience-section">
       <div class="section-heading reveal">
         <p class="eyebrow">04 — EXPERIENCE &amp; LEADERSHIP</p>
@@ -649,112 +343,12 @@ confidence = evaluate_confidence(output)
         </p>
       </div>
 
-      <div class="experience-grid">
-
-        <!-- AOU TA -->
-        <article class="experience-card featured-exp reveal">
-          <div class="experience-top">
-            <div>
-              <span class="experience-label current">CURRENT ROLE</span>
-              <h3>Teaching Assistant (Part-Time)</h3>
-              <p class="experience-org">Faculty of Information Technology and Computing — Arab Open University Egypt</p>
-            </div>
-            <span class="experience-period">Feb 2026 – Present</span>
-          </div>
-
-          <p class="exp-intro">
-            Instructing and mentoring computer science students across foundational programming, systems architecture, and web engineering:
-          </p>
-
-          <ul class="exp-bullet-list">
-            <li><strong>Programming Fundamentals &amp; C#:</strong> Assist in teaching object-oriented C# programming, core data structures, algorithms, and algorithmic complexity.</li>
-            <li><strong>Computer Organization &amp; Architecture:</strong> Explain CPU architecture, instruction cycles, memory hierarchy, cache management, and underlying hardware-software interaction.</li>
-            <li><strong>Web Technologies:</strong> Guide practical lab sessions covering HTML, CSS, JavaScript, PHP, and MySQL database integration.</li>
-            <li><strong>Code Debugging &amp; Labs:</strong> Lead hands-on programming labs, conducting code reviews and guiding students to resolve logic bugs and syntax errors.</li>
-          </ul>
-
-          <div class="experience-tags">
-            <span>C# Programming</span>
-            <span>Computer Architecture</span>
-            <span>Algorithms</span>
-            <span>Web Technologies</span>
-            <span>Student Mentorship</span>
-          </div>
-        </article>
-
-        <!-- ACADEMIC ADVISOR -->
-        <article class="experience-card reveal">
-          <div class="experience-top">
-            <div>
-              <span class="experience-label">ACADEMIC COUNSELING</span>
-              <h3>Academic Advisor</h3>
-              <p class="experience-org">Arab Open University Egypt</p>
-            </div>
-            <span class="experience-period">Aug 2023 – Sep 2023</span>
-          </div>
-
-          <p>
-            Provided individualized academic advising on degree course selections, prerequisites, study schedules, 
-            and graduation requirements. Guided students through academic regulations to optimize their collegiate trajectory.
-          </p>
-
-          <div class="experience-tags">
-            <span>Academic Planning</span>
-            <span>Curriculum Guidance</span>
-            <span>Student Success</span>
-          </div>
-        </article>
-
-        <!-- STUDENT COUNCIL -->
-        <article class="experience-card reveal">
-          <div class="experience-top">
-            <div>
-              <span class="experience-label">LEADERSHIP</span>
-              <h3>Administrative Member</h3>
-              <p class="experience-org">Student Council — Arab Open University Egypt</p>
-            </div>
-            <span class="experience-period">Oct 2023 – Oct 2024</span>
-          </div>
-
-          <p>
-            Organized academic workshops and student engagement initiatives across the university. 
-            Acted as a primary liaison facilitating clear communication between the student body and university administration.
-          </p>
-
-          <div class="experience-tags">
-            <span>Event Management</span>
-            <span>Leadership</span>
-            <span>Communication</span>
-          </div>
-        </article>
-
-        <!-- NETWORK ENGINEERING TRAINEE -->
-        <article class="experience-card reveal">
-          <div class="experience-top">
-            <div>
-              <span class="experience-label">TECHNICAL INTERNSHIP</span>
-              <h3>Network Engineering Trainee</h3>
-              <p class="experience-org">Dreams Resorts — Sharm El-Sheikh, Egypt</p>
-            </div>
-            <span class="experience-period">Aug 2022 – Sep 2022</span>
-          </div>
-
-          <p>
-            Monitored enterprise network infrastructure, assisted in diagnosing network routing and connectivity issues, 
-            and gained hands-on operational exposure to corporate LAN/WAN networking setups.
-          </p>
-
-          <div class="experience-tags">
-            <span>Network Infrastructure</span>
-            <span>Troubleshooting</span>
-            <span>LAN/WAN</span>
-          </div>
-        </article>
-
+      <div class="experience-grid" id="experienceContainer">
+        <!-- Rendered dynamically from experienceData in script.js -->
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
+    <!-- ================= SKILLS (DYNAMIC) ================= -->
     <section id="skills" class="section skills-section">
       <div class="section-heading reveal">
         <p class="eyebrow">05 — TECHNICAL TOOLKIT</p>
@@ -764,111 +358,8 @@ confidence = evaluate_confidence(output)
         </h2>
       </div>
 
-      <div class="skills-layout">
-        <!-- AI & ML -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">🤖</span>
-            <h3>AI &amp; Machine Learning</h3>
-          </div>
-          <div class="skill-list">
-            <span>Python</span>
-            <span>TensorFlow Lite</span>
-            <span>CNN (Computer Vision)</span>
-            <span>Scikit-learn</span>
-            <span>CatBoost</span>
-            <span>Extra Trees</span>
-            <span>Feature Engineering</span>
-            <span>GroupKFold Validation</span>
-            <span>Model Quantization</span>
-            <span>NumPy</span>
-            <span>Pandas</span>
-          </div>
-        </div>
-
-        <!-- Mobile & Software -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">📱</span>
-            <h3>Mobile &amp; Software Engineering</h3>
-          </div>
-          <div class="skill-list">
-            <span>Kotlin</span>
-            <span>Java</span>
-            <span>Android SDK</span>
-            <span>MVVM Architecture</span>
-            <span>XML Layouts</span>
-            <span>Data Binding</span>
-            <span>C#</span>
-            <span>ASP.NET MVC</span>
-            <span>Entity Framework</span>
-            <span>REST APIs</span>
-          </div>
-        </div>
-
-        <!-- Backend & Databases -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">🗄️</span>
-            <h3>Databases &amp; Backend</h3>
-          </div>
-          <div class="skill-list">
-            <span>Firebase Auth</span>
-            <span>Cloud Firestore</span>
-            <span>Room Database</span>
-            <span>MySQL</span>
-            <span>SQL</span>
-            <span>PHP</span>
-            <span>JSON Persistence</span>
-          </div>
-        </div>
-
-        <!-- Core CS -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">💻</span>
-            <h3>Core Computer Science</h3>
-          </div>
-          <div class="skill-list">
-            <span>Data Structures</span>
-            <span>Algorithms</span>
-            <span>OOP Design Patterns</span>
-            <span>Computer Organization</span>
-            <span>CPU &amp; Memory Hierarchy</span>
-            <span>Clean Architecture</span>
-          </div>
-        </div>
-
-        <!-- Tools & Workflow -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">🛠️</span>
-            <h3>Tools &amp; Environment</h3>
-          </div>
-          <div class="skill-list">
-            <span>Git &amp; GitHub</span>
-            <span>Android Studio</span>
-            <span>VS Code</span>
-            <span>Jupyter Notebook</span>
-            <span>Postman</span>
-          </div>
-        </div>
-
-        <!-- Languages & Soft Skills -->
-        <div class="skill-group reveal">
-          <div class="skill-group-header">
-            <span class="group-icon">🌟</span>
-            <h3>Languages &amp; Strengths</h3>
-          </div>
-          <div class="skill-list">
-            <span>Arabic (Native)</span>
-            <span>English (Very Good)</span>
-            <span>Technical Teaching</span>
-            <span>Problem Solving</span>
-            <span>Clear Communication</span>
-            <span>Team Collaboration</span>
-          </div>
-        </div>
+      <div class="skills-layout" id="skillsContainer">
+        <!-- Rendered dynamically from skillsData in script.js -->
       </div>
     </section>
 
@@ -914,21 +405,11 @@ confidence = evaluate_confidence(output)
             Send an Email ↗
           </a>
 
-          <a
-            class="btn secondary"
-            href="https://linkedin.com/in/abdelmasih-ashraf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn secondary" href="https://linkedin.com/in/abdelmasih-ashraf" target="_blank" rel="noopener noreferrer">
             Connect on LinkedIn ↗
           </a>
 
-          <a
-            class="btn secondary"
-            href="https://github.com/AAshrafR"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a class="btn secondary" href="https://github.com/AAshrafR" target="_blank" rel="noopener noreferrer">
             Follow on GitHub ↗
           </a>
 
