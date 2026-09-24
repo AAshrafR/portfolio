@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Abdelmasih Ashraf — AI Master's Student at Benha University, Teaching Assistant at Arab Open University, and Aspiring Machine Learning Engineer specializing in Deep Learning, TensorFlow Lite, and Android Engineering."
+  />
+  <meta name="keywords" content="Abdelmasih Ashraf, AI Engineer, Machine Learning, Deep Learning, TensorFlow Lite, Android, Kotlin, Computer Science, Benha University, Arab Open University" />
+  <meta name="author" content="Abdelmasih Ashraf" />
+
+  <title>Abdelmasih Ashraf | AI Master's Student &amp; ML Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <a class="brand" href="#home">
+      AA<span>.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation menu" id="menuToggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education &amp; Diplomas</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+      <a href="assets/Abdelmasih_Ashraf_CV.pdf" class="btn-nav-resume" target="_blank" download="Abdelmasih_Ashraf_CV.pdf">
+        <span>CV 📄</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          AI Master's Student · Teaching Assistant · Aspiring ML Engineer
+        </p>
+
+        <h1>
+          Engineering intelligent systems with
+          <span>Deep Learning &amp; Code.</span>
+        </h1>
+
+        <p class="hero-text">
+          I'm <strong>Abdelmasih Ashraf</strong>, currently pursuing an MSc in Artificial Intelligence at 
+          Benha University and working as a Teaching Assistant at Arab Open University. I bridge 
+          theoretical machine learning, on-device AI (TensorFlow Lite), and production-grade mobile &amp; backend development.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">
+            Explore Projects <span>↗</span>
+          </a>
+
+          <a
+            class="btn secondary btn-download"
+            href="assets/Abdelmasih_Ashraf_CV.pdf"
+            target="_blank"
+            download="Abdelmasih_Ashraf_CV.pdf"
+          >
+            <span>Download CV</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+
+          <a
+            class="btn ghost"
+            href="https://github.com/AAshrafR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            class="btn ghost"
+            href="https://linkedin.com/in/abdelmasih-ashraf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>Python</span>
+          <span>Deep Learning &amp; CNN</span>
+          <span>TensorFlow Lite</span>
+          <span>Kotlin (Android)</span>
+          <span>MVVM &amp; Firebase</span>
+          <span>C# &amp; .NET</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orb"></div>
+        <div class="grid-lines"></div>
+
+        <div class="code-card">
+          <div class="code-top">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <small>alzcare_inference.py</small>
+          </div>
+
+          <pre><code><span class="comment"># AlzCare: On-Device MRI Deep Learning</span>
+<span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf
+
+<span class="comment"># Load quantized CNN model for mobile edge</span>
+interpreter = tf.lite.Interpreter(
+    model_path=<span class="string">"alzheimer_cnn.tflite"</span>
+)
+interpreter.allocate_tensors()
+
+<span class="comment"># Early Alzheimer's Detection Analysis</span>
+output = model.predict(preprocessed_mri)
+confidence = evaluate_confidence(output)
+
+<span class="comment"># Status: Grade A Capstone Completed</span></code></pre>
+        </div>
+
+        <div class="floating-chip chip-one">
+          <span class="chip-dot"></span> CNN &amp; TFLite
+        </div>
+        <div class="floating-chip chip-two">
+          <span class="chip-dot"></span> MSc in AI (Benha)
+        </div>
+        <div class="floating-chip chip-three">
+          <span class="chip-dot"></span> GPA 3.66 · Grade A
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPACT METRICS ================= -->
+    <section class="section metrics-section">
+      <div class="metrics-grid">
+        <div class="metric-card reveal">
+          <div class="metric-value">3.66<span>/4.0</span></div>
+          <div class="metric-label">Bachelor GPA</div>
+          <div class="metric-sub">Arab Open University (2020–2024)</div>
+        </div>
+
+        <div class="metric-card reveal">
+          <div class="metric-value">Grade A</div>
+          <div class="metric-label">Graduation Project</div>
+          <div class="metric-sub">AlzCare AI Healthcare System</div>
+        </div>
+
+        <div class="metric-card reveal">
+          <div class="metric-value">MSc AI</div>
+          <div class="metric-label">Graduate Studies</div>
+          <div class="metric-sub">Benha University (In Progress)</div>
+        </div>
+
+        <div class="metric-card reveal">
+          <div class="metric-value">180+<span>h</span></div>
+          <div class="metric-label">Specialized Training</div>
+          <div class="metric-sub">ITI (.NET) &amp; Route Academy (Android)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section split">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 — ABOUT ME</p>
+        <h2>
+          Connecting theoretical AI with
+          <span>production applications.</span>
+        </h2>
+      </div>
+
+      <div class="about-copy reveal">
+        <p>
+          I am an <strong>AI Master's Student at Benha University</strong> and a <strong>Teaching Assistant</strong> at the 
+          Faculty of Information Technology and Computing, Arab Open University Egypt. I hold a Bachelor of Computer Science 
+          with a <strong>3.66 GPA</strong>, graduating with a Grade A for my capstone project <em>AlzCare</em>.
+        </p>
+
+        <p>
+          My technical journey balances deep mathematical modeling with scalable software architecture. 
+          I specialize in <strong>Machine Learning and Deep Learning (CNNs, model quantization with TensorFlow Lite)</strong>, 
+          backed by extensive software engineering expertise in <strong>Native Android (Kotlin, MVVM, Room, Firebase)</strong> 
+          and full-stack development through the <strong>Information Technology Institute (ITI)</strong>.
+        </p>
+
+        <p>
+          Beyond research and development, I am deeply committed to education and mentorship. As a Teaching Assistant, 
+          I support undergraduate students in C# Programming, Computer Organization &amp; Architecture (CPU internal structure, 
+          cache hierarchies), and Web Technologies, mentoring them through rigorous debugging and algorithm design.
+        </p>
+
+        <!-- Quick Info Badges -->
+        <div class="about-info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-val">El Shorouk, Cairo, Egypt 📍</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <a href="mailto:aashrafr24@gmail.com" class="info-val link">aashrafr24@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone</span>
+            <a href="tel:+201228114566" class="info-val link">+20 122 811 4566</a>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Languages</span>
+            <span class="info-val">Arabic (Native) · English (Fluent)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 — FEATURED PROJECTS</p>
+        <h2>
+          Engineered for impact &amp;
+          <span>performance.</span>
+        </h2>
+        <p class="section-subtitle">
+          Real-world applications spanning on-device deep learning, medical platforms, and predictive machine learning models.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-wrapper reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; Deep Learning</button>
+        <button class="filter-btn" data-filter="mobile">Mobile &amp; Healthcare</button>
+        <button class="filter-btn" data-filter="data">Data Science &amp; Systems</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 01: AlzCare (FLAGSHIP) -->
+        <article class="project-card featured reveal" data-category="ai mobile">
+          <div class="card-badge">Graduation Project · Grade A</div>
+          <div class="project-number">01 / FLAGSHIP</div>
+
+          <div class="project-content">
+            <div class="tags">
+              <span>Deep Learning</span>
+              <span>CNN</span>
+              <span>TensorFlow Lite</span>
+              <span>Kotlin</span>
+              <span>MVVM</span>
+              <span>Firebase</span>
+            </div>
+
+            <h3>AlzCare — Android AI Healthcare Application</h3>
+
+            <p>
+              An intelligent mobile healthcare application combining on-device computer vision with an end-to-end 
+              clinical workflow for early Alzheimer's disease detection from brain MRI scans.
+            </p>
+
+            <ul>
+              <li>
+                <strong>On-Device Deep Learning:</strong> Integrated a Convolutional Neural Network (CNN) converted and optimized via TensorFlow Lite to perform low-latency, privacy-preserving Alzheimer’s screening from MRI images directly on mobile hardware.
+              </li>
+              <li>
+                <strong>Scalable Android Architecture:</strong> Engineered using Kotlin, MVVM architectural pattern, and Android Jetpack components ensuring loose coupling and testability.
+              </li>
+              <li>
+                <strong>Real-Time Medical Synchronization:</strong> Implemented Firebase Authentication and Cloud Firestore for doctor appointment scheduling, secure patient monitoring, and medical record management.
+              </li>
+              <li>
+                <strong>Academic Distinction:</strong> Awarded a <strong>Grade A</strong> capstone defense at Arab Open University.
+              </li>
+            </ul>
+
+            <div class="card-footer">
+              <a
+                class="project-link"
+                href="https://github.com/AAshrafR/alz_care"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository on GitHub ↗
+              </a>
+              <span class="tech-stack-label">Kotlin · TensorFlow Lite · Firebase</span>
+            </div>
+          </div>
+
+          <div class="project-icon">🧠</div>
+        </article>
+
+        <!-- PROJECT 02: MClinic -->
+        <article class="project-card reveal" data-category="mobile">
+          <div class="card-badge">Production Android</div>
+          <div class="project-number">02</div>
+
+          <div class="project-content">
+            <div class="tags">
+              <span>Android</span>
+              <span>Kotlin</span>
+              <span>MVVM</span>
+              <span>Firebase</span>
+              <span>Data Visualization</span>
+            </div>
+
+            <h3>MClinic — Medical Clinic Management Application</h3>
+
+            <p>
+              A feature-complete Android medical clinic ecosystem managing patient lifecycles, real-time doctor reservations, 
+              and longitudinal physiological health tracking.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Admin &amp; Clinic Dashboard:</strong> Built administrative controls for managing doctors, patient rosters, operating hours, and appointment reservations.
+              </li>
+              <li>
+                <strong>Health Metric Logging:</strong> Developed an interactive module allowing chronic patients to log vital measurements including glucose and blood pressure.
+              </li>
+              <li>
+                <strong>Interactive Data Visualization:</strong> Built analytical charts and graphs to illustrate health trends over time for attending physicians.
+              </li>
+              <li>
+                <strong>Prescription Management:</strong> Integrated cloud storage features allowing patients to securely photograph and upload prescription images.
+              </li>
+            </ul>
+
+            <div class="card-footer">
+              <a
+                class="project-link"
+                href="https://github.com/AAshrafR/MClinc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">📱</div>
+        </article>
+
+        <!-- PROJECT 03: Post-Meal Glucose Prediction -->
+        <article class="project-card reveal" data-category="ai data">
+          <div class="card-badge">Machine Learning Research</div>
+          <div class="project-number">03</div>
+
+          <div class="project-content">
+            <div class="tags">
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>CatBoost</span>
+              <span>Extra Trees</span>
+              <span>Scikit-Learn</span>
+            </div>
+
+            <h3>Post-Meal Blood Glucose Prediction</h3>
+
+            <p>
+              A predictive machine learning framework designed to estimate post-prandial glycemic excursions 
+              using structured dietary and metabolic records.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Data Integrity &amp; Leakage Prevention:</strong> Enforced subject-level grouped train/test splitting and GroupKFold cross-validation to prevent intra-patient leakage.
+              </li>
+              <li>
+                <strong>Algorithm Benchmark:</strong> Evaluated advanced gradient-boosted trees (CatBoost) against Extra Trees ensembles under rigorous RMSE, MAE, and R² metrics.
+              </li>
+              <li>
+                <strong>Feature Importance:</strong> Analyzed macronutrient ratios and temporal attributes influencing post-meal glucose spikes.
+              </li>
+            </ul>
+
+            <div class="card-footer">
+              <a
+                class="project-link"
+                href="https://github.com/AAshrafR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">📊</div>
+        </article>
+
+        <!-- PROJECT 04: Ford GoBike Data Analysis -->
+        <article class="project-card reveal" data-category="data">
+          <div class="card-badge">Analytics &amp; Dashboard</div>
+          <div class="project-number">04</div>
+
+          <div class="project-content">
+            <div class="tags">
+              <span>Data Analysis</span>
+              <span>Python</span>
+              <span>Plotly</span>
+              <span>Dash</span>
+              <span>Pandas</span>
+            </div>
+
+            <h3>Ford GoBike Analytics &amp; Interactive Dashboard</h3>
+
+            <p>
+              An end-to-end urban mobility analytics pipeline transforming large-scale trip datasets into 
+              actionable user behavior models and a live interactive web dashboard.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Data Pipeline:</strong> Handled dirty trip logs, geolocation outliers, and temporal feature engineering (commute hours, subscriber vs. customer splits).
+              </li>
+              <li>
+                <strong>Modular Python Engineering:</strong> Converted ad-hoc exploratory Jupyter notebooks into reusable, tested Python analysis modules.
+              </li>
+              <li>
+                <strong>Interactive Visualization:</strong> Developed a responsive dashboard with Dash and Plotly to explore spatial trip density and usage distributions.
+              </li>
+            </ul>
+
+            <div class="card-footer">
+              <a
+                class="project-link"
+                href="https://github.com/AAshrafR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">🚴</div>
+        </article>
+
+        <!-- PROJECT 05: Hospital Management System -->
+        <article class="project-card reveal" data-category="data">
+          <div class="card-badge">Software Engineering</div>
+          <div class="project-number">05</div>
+
+          <div class="project-content">
+            <div class="tags">
+              <span>Python</span>
+              <span>OOP</span>
+              <span>Software Design</span>
+              <span>JSON Persistence</span>
+            </div>
+
+            <h3>Hospital Management System</h3>
+
+            <p>
+              An object-oriented software system modeling hospital administration, departmental coordination, 
+              patient admissions, and persistent state management.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Enterprise OOP Architecture:</strong> Designed clean class hierarchies for Doctors, Patients, Staff, Departments, and Admissions adhering to SOLID principles.
+              </li>
+              <li>
+                <strong>Data Persistence:</strong> Implemented robust file-based JSON serialization allowing reliable record restoration, updates, and transactional integrity.
+              </li>
+            </ul>
+
+            <div class="card-footer">
+              <a
+                class="project-link"
+                href="https://github.com/AAshrafR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+          <div class="project-icon">🏥</div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION & DIPLOMAS ================= -->
+    <section id="education" class="section education-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 — ACADEMIC &amp; CERTIFICATIONS</p>
+        <h2>
+          Education &amp;
+          <span>specialized diplomas.</span>
+        </h2>
+        <p class="section-subtitle">
+          Rigorous academic degrees in Computer Science &amp; AI combined with 180+ hours of advanced industry diplomas.
+        </p>
+      </div>
+
+      <div class="education-grid">
+        <!-- MSC BENHA -->
+        <div class="education-card highlight reveal">
+          <div class="edu-header">
+            <span class="edu-badge live">In Progress</span>
+            <span class="edu-date">Feb 2026 – Present</span>
+          </div>
+          <h3>Master's Degree in Artificial Intelligence</h3>
+          <p class="edu-institution">Benha University · Egypt</p>
+          <p class="edu-desc">
+            Focusing on advanced machine learning algorithms, deep neural network architectures, computer vision, 
+            intelligent systems design, and applied AI research.
+          </p>
+          <div class="edu-tags">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>AI Research</span>
+            <span>Intelligent Systems</span>
+          </div>
+        </div>
+
+        <!-- BSC AOU -->
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <span class="edu-badge grade">GPA: 3.66 / 4.0</span>
+            <span class="edu-date">Oct 2020 – Jun 2024</span>
+          </div>
+          <h3>Bachelor of Computer Science</h3>
+          <p class="edu-institution">Arab Open University · Egypt</p>
+          <p class="edu-desc">
+            Core foundations in algorithms, data structures, operating systems, and computer architecture. 
+            Graduated with a <strong>Grade A</strong> capstone defense for <em>AlzCare</em>.
+          </p>
+          <div class="edu-tags">
+            <span>Graduation Project: Grade A</span>
+            <span>Computer Science</span>
+            <span>Algorithms</span>
+            <span>OOP</span>
+          </div>
+        </div>
+
+        <!-- ITI FULL STACK .NET -->
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <span class="edu-badge diploma">120 Hours Intensive</span>
+            <span class="edu-date">Aug 2024</span>
+          </div>
+          <h3>Full Stack Web Development (.NET)</h3>
+          <p class="edu-institution">Information Technology Institute (ITI) · Egypt</p>
+          <p class="edu-desc">
+            Comprehensive professional training in backend and web architecture using modern C#, 
+            Entity Framework, ASP.NET MVC, and MySQL relational database management.
+          </p>
+          <div class="edu-tags">
+            <span>C#</span>
+            <span>ASP.NET MVC</span>
+            <span>Entity Framework</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <!-- ROUTE ACADEMY ANDROID -->
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <span class="edu-badge diploma">Professional Diploma</span>
+            <span class="edu-date">May 2023 – Oct 2023</span>
+          </div>
+          <h3>Android Development Diploma</h3>
+          <p class="edu-institution">Route Academy</p>
+          <p class="edu-desc">
+            Professional mobile engineering covering Kotlin, XML UI layouts, MVVM architecture, 
+            Data Binding, Room SQLite database, Firebase Auth/Firestore, and Git version control.
+          </p>
+          <div class="edu-tags">
+            <span>Kotlin</span>
+            <span>Android SDK</span>
+            <span>MVVM</span>
+            <span>Room DB</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+
+        <!-- ITI WEB TECH -->
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <span class="edu-badge diploma">60 Hours Intensive</span>
+            <span class="edu-date">Aug 2021</span>
+          </div>
+          <h3>Introduction to Web Technologies</h3>
+          <p class="edu-institution">Information Technology Institute (ITI) · Egypt</p>
+          <p class="edu-desc">
+            Foundational training in modern front-end web standards, responsive design, semantic HTML5, 
+            CSS styling, and DOM manipulation with vanilla JavaScript.
+          </p>
+          <div class="edu-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Web Standards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section experience-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 — EXPERIENCE &amp; LEADERSHIP</p>
+        <h2>
+          Teaching, advising &amp;
+          <span>technical mentorship.</span>
+        </h2>
+        <p class="section-subtitle">
+          Academic leadership, student instruction, and technical problem solving.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+
+        <!-- AOU TA -->
+        <article class="experience-card featured-exp reveal">
+          <div class="experience-top">
+            <div>
+              <span class="experience-label current">CURRENT ROLE</span>
+              <h3>Teaching Assistant (Part-Time)</h3>
+              <p class="experience-org">Faculty of Information Technology and Computing — Arab Open University Egypt</p>
+            </div>
+            <span class="experience-period">Feb 2026 – Present</span>
+          </div>
+
+          <p class="exp-intro">
+            Instructing and mentoring computer science students across foundational programming, systems architecture, and web engineering:
+          </p>
+
+          <ul class="exp-bullet-list">
+            <li><strong>Programming Fundamentals &amp; C#:</strong> Assist in teaching object-oriented C# programming, core data structures, algorithms, and algorithmic complexity.</li>
+            <li><strong>Computer Organization &amp; Architecture:</strong> Explain CPU architecture, instruction cycles, memory hierarchy, cache management, and underlying hardware-software interaction.</li>
+            <li><strong>Web Technologies:</strong> Guide practical lab sessions covering HTML, CSS, JavaScript, PHP, and MySQL database integration.</li>
+            <li><strong>Code Debugging &amp; Labs:</strong> Lead hands-on programming labs, conducting code reviews and guiding students to resolve logic bugs and syntax errors.</li>
+          </ul>
+
+          <div class="experience-tags">
+            <span>C# Programming</span>
+            <span>Computer Architecture</span>
+            <span>Algorithms</span>
+            <span>Web Technologies</span>
+            <span>Student Mentorship</span>
+          </div>
+        </article>
+
+        <!-- ACADEMIC ADVISOR -->
+        <article class="experience-card reveal">
+          <div class="experience-top">
+            <div>
+              <span class="experience-label">ACADEMIC COUNSELING</span>
+              <h3>Academic Advisor</h3>
+              <p class="experience-org">Arab Open University Egypt</p>
+            </div>
+            <span class="experience-period">Aug 2023 – Sep 2023</span>
+          </div>
+
+          <p>
+            Provided individualized academic advising on degree course selections, prerequisites, study schedules, 
+            and graduation requirements. Guided students through academic regulations to optimize their collegiate trajectory.
+          </p>
+
+          <div class="experience-tags">
+            <span>Academic Planning</span>
+            <span>Curriculum Guidance</span>
+            <span>Student Success</span>
+          </div>
+        </article>
+
+        <!-- STUDENT COUNCIL -->
+        <article class="experience-card reveal">
+          <div class="experience-top">
+            <div>
+              <span class="experience-label">LEADERSHIP</span>
+              <h3>Administrative Member</h3>
+              <p class="experience-org">Student Council — Arab Open University Egypt</p>
+            </div>
+            <span class="experience-period">Oct 2023 – Oct 2024</span>
+          </div>
+
+          <p>
+            Organized academic workshops and student engagement initiatives across the university. 
+            Acted as a primary liaison facilitating clear communication between the student body and university administration.
+          </p>
+
+          <div class="experience-tags">
+            <span>Event Management</span>
+            <span>Leadership</span>
+            <span>Communication</span>
+          </div>
+        </article>
+
+        <!-- NETWORK ENGINEERING TRAINEE -->
+        <article class="experience-card reveal">
+          <div class="experience-top">
+            <div>
+              <span class="experience-label">TECHNICAL INTERNSHIP</span>
+              <h3>Network Engineering Trainee</h3>
+              <p class="experience-org">Dreams Resorts — Sharm El-Sheikh, Egypt</p>
+            </div>
+            <span class="experience-period">Aug 2022 – Sep 2022</span>
+          </div>
+
+          <p>
+            Monitored enterprise network infrastructure, assisted in diagnosing network routing and connectivity issues, 
+            and gained hands-on operational exposure to corporate LAN/WAN networking setups.
+          </p>
+
+          <div class="experience-tags">
+            <span>Network Infrastructure</span>
+            <span>Troubleshooting</span>
+            <span>LAN/WAN</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section skills-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 — TECHNICAL TOOLKIT</p>
+        <h2>
+          Skills, frameworks &amp;
+          <span>technologies.</span>
+        </h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- AI & ML -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">🤖</span>
+            <h3>AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-list">
+            <span>Python</span>
+            <span>TensorFlow Lite</span>
+            <span>CNN (Computer Vision)</span>
+            <span>Scikit-learn</span>
+            <span>CatBoost</span>
+            <span>Extra Trees</span>
+            <span>Feature Engineering</span>
+            <span>GroupKFold Validation</span>
+            <span>Model Quantization</span>
+            <span>NumPy</span>
+            <span>Pandas</span>
+          </div>
+        </div>
+
+        <!-- Mobile & Software -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">📱</span>
+            <h3>Mobile &amp; Software Engineering</h3>
+          </div>
+          <div class="skill-list">
+            <span>Kotlin</span>
+            <span>Java</span>
+            <span>Android SDK</span>
+            <span>MVVM Architecture</span>
+            <span>XML Layouts</span>
+            <span>Data Binding</span>
+            <span>C#</span>
+            <span>ASP.NET MVC</span>
+            <span>Entity Framework</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">🗄️</span>
+            <h3>Databases &amp; Backend</h3>
+          </div>
+          <div class="skill-list">
+            <span>Firebase Auth</span>
+            <span>Cloud Firestore</span>
+            <span>Room Database</span>
+            <span>MySQL</span>
+            <span>SQL</span>
+            <span>PHP</span>
+            <span>JSON Persistence</span>
+          </div>
+        </div>
+
+        <!-- Core CS -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">💻</span>
+            <h3>Core Computer Science</h3>
+          </div>
+          <div class="skill-list">
+            <span>Data Structures</span>
+            <span>Algorithms</span>
+            <span>OOP Design Patterns</span>
+            <span>Computer Organization</span>
+            <span>CPU &amp; Memory Hierarchy</span>
+            <span>Clean Architecture</span>
+          </div>
+        </div>
+
+        <!-- Tools & Workflow -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">🛠️</span>
+            <h3>Tools &amp; Environment</h3>
+          </div>
+          <div class="skill-list">
+            <span>Git &amp; GitHub</span>
+            <span>Android Studio</span>
+            <span>VS Code</span>
+            <span>Jupyter Notebook</span>
+            <span>Postman</span>
+          </div>
+        </div>
+
+        <!-- Languages & Soft Skills -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="group-icon">🌟</span>
+            <h3>Languages &amp; Strengths</h3>
+          </div>
+          <div class="skill-list">
+            <span>Arabic (Native)</span>
+            <span>English (Very Good)</span>
+            <span>Technical Teaching</span>
+            <span>Problem Solving</span>
+            <span>Clear Communication</span>
+            <span>Team Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-card reveal">
+        <p class="eyebrow">06 — GET IN TOUCH</p>
+
+        <h2>
+          Let's build intelligent solutions
+          <span>together.</span>
+        </h2>
+
+        <p class="contact-desc">
+          I'm open to Machine Learning &amp; AI Engineering roles, research collaborations, 
+          and challenging software engineering opportunities.
+        </p>
+
+        <!-- Direct Contact Info Badges -->
+        <div class="contact-details-bar">
+          <div class="contact-pill">
+            <span class="pill-label">Email:</span>
+            <span class="pill-value" id="emailText">aashrafr24@gmail.com</span>
+            <button class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span class="copy-tooltip" id="copyTooltip">Copied!</span>
+            </button>
+          </div>
+
+          <div class="contact-pill">
+            <span class="pill-label">Phone:</span>
+            <a href="tel:+201228114566" class="pill-value link">+20 122 811 4566</a>
+          </div>
+
+          <div class="contact-pill">
+            <span class="pill-label">Location:</span>
+            <span class="pill-value">El Shorouk, Cairo, Egypt 📍</span>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:aashrafr24@gmail.com">
+            Send an Email ↗
+          </a>
+
+          <a
+            class="btn secondary"
+            href="https://linkedin.com/in/abdelmasih-ashraf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on LinkedIn ↗
+          </a>
+
+          <a
+            class="btn secondary"
+            href="https://github.com/AAshrafR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Follow on GitHub ↗
+          </a>
+
+          <a
+            class="btn secondary btn-download"
+            href="assets/Abdelmasih_Ashraf_CV.pdf"
+            target="_blank"
+            download="Abdelmasih_Ashraf_CV.pdf"
+          >
+            Download CV (PDF) 📄
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2026 Abdelmasih Ashraf Rezk. All rights reserved.</span>
+      <span>Teaching Assistant · AI Master's Student · Machine Learning Practitioner</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
