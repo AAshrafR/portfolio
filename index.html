@@ -32,7 +32,7 @@
       AA<span>.</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Toggle navigation menu" id="menuToggle">
+    <button class="menu-toggle" aria-label="Toggle navigation menu" id="menuToggle" aria-expanded="false">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
@@ -162,25 +162,25 @@ confidence = evaluate_confidence(output)
         <div class="metric-card reveal">
           <div class="metric-value">3.66<span>/4.0</span></div>
           <div class="metric-label">Bachelor GPA</div>
-          <div class="metric-sub">Arab Open University (2020–2024)</div>
+          <div class="metric-sub">Arab Open University</div>
         </div>
 
         <div class="metric-card reveal">
           <div class="metric-value">Grade A</div>
           <div class="metric-label">Graduation Project</div>
-          <div class="metric-sub">AlzCare AI Healthcare System</div>
+          <div class="metric-sub">AlzCare AI Healthcare</div>
         </div>
 
         <div class="metric-card reveal">
           <div class="metric-value">MSc AI</div>
           <div class="metric-label">Graduate Studies</div>
-          <div class="metric-sub">Benha University (In Progress)</div>
+          <div class="metric-sub">Benha University</div>
         </div>
 
         <div class="metric-card reveal">
           <div class="metric-value">180+<span>h</span></div>
-          <div class="metric-label">Specialized Training</div>
-          <div class="metric-sub">ITI (.NET) &amp; Route Academy (Android)</div>
+          <div class="metric-label">Specialized Diplomas</div>
+          <div class="metric-sub">ITI &amp; Route Academy</div>
         </div>
       </div>
     </section>
@@ -246,7 +246,7 @@ confidence = evaluate_confidence(output)
           <span>performance.</span>
         </h2>
         <p class="section-subtitle">
-          Real-world applications spanning on-device deep learning, medical platforms, and predictive machine learning models.
+          Click any project card to view the comprehensive case study, problem statement, technical architecture, and live links.
         </p>
       </div>
 
@@ -261,247 +261,263 @@ confidence = evaluate_confidence(output)
       <div class="projects-grid">
 
         <!-- PROJECT 01: AlzCare (FLAGSHIP) -->
-        <article class="project-card featured reveal" data-category="ai mobile">
-          <div class="card-badge">Graduation Project · Grade A</div>
-          <div class="project-number">01 / FLAGSHIP</div>
+        <article class="project-card featured reveal" data-category="ai mobile" data-project-id="alzcare" tabindex="0" role="button" aria-label="View AlzCare project details">
+          <div class="card-top">
+            <span class="card-badge">Grade A Capstone</span>
+            <span class="card-action-hint">Click for Details ↗</span>
+          </div>
 
           <div class="project-content">
+            <div class="project-title-row">
+              <h3>AlzCare — Android AI Healthcare</h3>
+              <span class="project-mini-icon">🧠</span>
+            </div>
+
+            <p class="project-summary">
+              Early Alzheimer's detection from MRI scans using an on-device quantized CNN model with TensorFlow Lite, integrated into a native Android clinical ecosystem.
+            </p>
+
             <div class="tags">
               <span>Deep Learning</span>
-              <span>CNN</span>
               <span>TensorFlow Lite</span>
               <span>Kotlin</span>
               <span>MVVM</span>
               <span>Firebase</span>
             </div>
-
-            <h3>AlzCare — Android AI Healthcare Application</h3>
-
-            <p>
-              An intelligent mobile healthcare application combining on-device computer vision with an end-to-end 
-              clinical workflow for early Alzheimer's disease detection from brain MRI scans.
-            </p>
-
-            <ul>
-              <li>
-                <strong>On-Device Deep Learning:</strong> Integrated a Convolutional Neural Network (CNN) converted and optimized via TensorFlow Lite to perform low-latency, privacy-preserving Alzheimer’s screening from MRI images directly on mobile hardware.
-              </li>
-              <li>
-                <strong>Scalable Android Architecture:</strong> Engineered using Kotlin, MVVM architectural pattern, and Android Jetpack components ensuring loose coupling and testability.
-              </li>
-              <li>
-                <strong>Real-Time Medical Synchronization:</strong> Implemented Firebase Authentication and Cloud Firestore for doctor appointment scheduling, secure patient monitoring, and medical record management.
-              </li>
-              <li>
-                <strong>Academic Distinction:</strong> Awarded a <strong>Grade A</strong> capstone defense at Arab Open University.
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a
-                class="project-link"
-                href="https://github.com/AAshrafR/alz_care"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Repository on GitHub ↗
-              </a>
-              <span class="tech-stack-label">Kotlin · TensorFlow Lite · Firebase</span>
-            </div>
           </div>
 
-          <div class="project-icon">🧠</div>
+          <div class="card-footer">
+            <span class="btn-card-details">
+              Case Study &amp; Problems <span class="arrow">→</span>
+            </span>
+            <div class="card-quick-links">
+              <span class="quick-link-pill">Live / Code</span>
+            </div>
+          </div>
         </article>
 
         <!-- PROJECT 02: MClinic -->
-        <article class="project-card reveal" data-category="mobile">
-          <div class="card-badge">Production Android</div>
-          <div class="project-number">02</div>
+        <article class="project-card reveal" data-category="mobile" data-project-id="mclinic" tabindex="0" role="button" aria-label="View MClinic project details">
+          <div class="card-top">
+            <span class="card-badge badge-mobile">Production Android</span>
+            <span class="card-action-hint">Click for Details ↗</span>
+          </div>
 
           <div class="project-content">
+            <div class="project-title-row">
+              <h3>MClinic — Medical Clinic Management</h3>
+              <span class="project-mini-icon">📱</span>
+            </div>
+
+            <p class="project-summary">
+              Comprehensive Android clinic platform managing appointments, doctor administration, chronic health metric tracking (glucose, blood pressure), and prescriptions.
+            </p>
+
             <div class="tags">
-              <span>Android</span>
               <span>Kotlin</span>
               <span>MVVM</span>
               <span>Firebase</span>
-              <span>Data Visualization</span>
-            </div>
-
-            <h3>MClinic — Medical Clinic Management Application</h3>
-
-            <p>
-              A feature-complete Android medical clinic ecosystem managing patient lifecycles, real-time doctor reservations, 
-              and longitudinal physiological health tracking.
-            </p>
-
-            <ul>
-              <li>
-                <strong>Admin &amp; Clinic Dashboard:</strong> Built administrative controls for managing doctors, patient rosters, operating hours, and appointment reservations.
-              </li>
-              <li>
-                <strong>Health Metric Logging:</strong> Developed an interactive module allowing chronic patients to log vital measurements including glucose and blood pressure.
-              </li>
-              <li>
-                <strong>Interactive Data Visualization:</strong> Built analytical charts and graphs to illustrate health trends over time for attending physicians.
-              </li>
-              <li>
-                <strong>Prescription Management:</strong> Integrated cloud storage features allowing patients to securely photograph and upload prescription images.
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a
-                class="project-link"
-                href="https://github.com/AAshrafR/MClinc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Repository on GitHub ↗
-              </a>
+              <span>Health Tracking</span>
             </div>
           </div>
-          <div class="project-icon">📱</div>
+
+          <div class="card-footer">
+            <span class="btn-card-details">
+              Case Study &amp; Problems <span class="arrow">→</span>
+            </span>
+            <div class="card-quick-links">
+              <span class="quick-link-pill">Live / Code</span>
+            </div>
+          </div>
         </article>
 
         <!-- PROJECT 03: Post-Meal Glucose Prediction -->
-        <article class="project-card reveal" data-category="ai data">
-          <div class="card-badge">Machine Learning Research</div>
-          <div class="project-number">03</div>
+        <article class="project-card reveal" data-category="ai data" data-project-id="glucose" tabindex="0" role="button" aria-label="View Post-Meal Glucose Prediction project details">
+          <div class="card-top">
+            <span class="card-badge badge-ml">ML Research</span>
+            <span class="card-action-hint">Click for Details ↗</span>
+          </div>
 
           <div class="project-content">
-            <div class="tags">
-              <span>Machine Learning</span>
-              <span>Python</span>
-              <span>CatBoost</span>
-              <span>Extra Trees</span>
-              <span>Scikit-Learn</span>
+            <div class="project-title-row">
+              <h3>Post-Meal Glucose Prediction</h3>
+              <span class="project-mini-icon">📊</span>
             </div>
 
-            <h3>Post-Meal Blood Glucose Prediction</h3>
-
-            <p>
-              A predictive machine learning framework designed to estimate post-prandial glycemic excursions 
-              using structured dietary and metabolic records.
+            <p class="project-summary">
+              Machine learning predictive model estimating post-prandial glycemic excursions with strict subject-isolated GroupKFold validation and CatBoost benchmarks.
             </p>
 
-            <ul>
-              <li>
-                <strong>Data Integrity &amp; Leakage Prevention:</strong> Enforced subject-level grouped train/test splitting and GroupKFold cross-validation to prevent intra-patient leakage.
-              </li>
-              <li>
-                <strong>Algorithm Benchmark:</strong> Evaluated advanced gradient-boosted trees (CatBoost) against Extra Trees ensembles under rigorous RMSE, MAE, and R² metrics.
-              </li>
-              <li>
-                <strong>Feature Importance:</strong> Analyzed macronutrient ratios and temporal attributes influencing post-meal glucose spikes.
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a
-                class="project-link"
-                href="https://github.com/AAshrafR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Repository on GitHub ↗
-              </a>
+            <div class="tags">
+              <span>Machine Learning</span>
+              <span>CatBoost</span>
+              <span>GroupKFold</span>
+              <span>Scikit-learn</span>
             </div>
           </div>
-          <div class="project-icon">📊</div>
+
+          <div class="card-footer">
+            <span class="btn-card-details">
+              Case Study &amp; Problems <span class="arrow">→</span>
+            </span>
+            <div class="card-quick-links">
+              <span class="quick-link-pill">Live / Code</span>
+            </div>
+          </div>
         </article>
 
         <!-- PROJECT 04: Ford GoBike Data Analysis -->
-        <article class="project-card reveal" data-category="data">
-          <div class="card-badge">Analytics &amp; Dashboard</div>
-          <div class="project-number">04</div>
+        <article class="project-card reveal" data-category="data" data-project-id="gobike" tabindex="0" role="button" aria-label="View Ford GoBike Data Analysis project details">
+          <div class="card-top">
+            <span class="card-badge badge-data">Data Dashboard</span>
+            <span class="card-action-hint">Click for Details ↗</span>
+          </div>
 
           <div class="project-content">
-            <div class="tags">
-              <span>Data Analysis</span>
-              <span>Python</span>
-              <span>Plotly</span>
-              <span>Dash</span>
-              <span>Pandas</span>
+            <div class="project-title-row">
+              <h3>Ford GoBike Analytics &amp; Dashboard</h3>
+              <span class="project-mini-icon">🚴</span>
             </div>
 
-            <h3>Ford GoBike Analytics &amp; Interactive Dashboard</h3>
-
-            <p>
-              An end-to-end urban mobility analytics pipeline transforming large-scale trip datasets into 
-              actionable user behavior models and a live interactive web dashboard.
+            <p class="project-summary">
+              End-to-end urban mobility analytics transforming millions of trip records into automated feature pipelines and an interactive Dash/Plotly dashboard.
             </p>
 
-            <ul>
-              <li>
-                <strong>Data Pipeline:</strong> Handled dirty trip logs, geolocation outliers, and temporal feature engineering (commute hours, subscriber vs. customer splits).
-              </li>
-              <li>
-                <strong>Modular Python Engineering:</strong> Converted ad-hoc exploratory Jupyter notebooks into reusable, tested Python analysis modules.
-              </li>
-              <li>
-                <strong>Interactive Visualization:</strong> Developed a responsive dashboard with Dash and Plotly to explore spatial trip density and usage distributions.
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a
-                class="project-link"
-                href="https://github.com/AAshrafR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Repository on GitHub ↗
-              </a>
+            <div class="tags">
+              <span>Python</span>
+              <span>Plotly &amp; Dash</span>
+              <span>EDA</span>
+              <span>Feature Eng.</span>
             </div>
           </div>
-          <div class="project-icon">🚴</div>
+
+          <div class="card-footer">
+            <span class="btn-card-details">
+              Case Study &amp; Problems <span class="arrow">→</span>
+            </span>
+            <div class="card-quick-links">
+              <span class="quick-link-pill">Live / Code</span>
+            </div>
+          </div>
         </article>
 
         <!-- PROJECT 05: Hospital Management System -->
-        <article class="project-card reveal" data-category="data">
-          <div class="card-badge">Software Engineering</div>
-          <div class="project-number">05</div>
+        <article class="project-card reveal" data-category="data" data-project-id="hospital" tabindex="0" role="button" aria-label="View Hospital Management System project details">
+          <div class="card-top">
+            <span class="card-badge badge-code">Software Architecture</span>
+            <span class="card-action-hint">Click for Details ↗</span>
+          </div>
 
           <div class="project-content">
-            <div class="tags">
-              <span>Python</span>
-              <span>OOP</span>
-              <span>Software Design</span>
-              <span>JSON Persistence</span>
+            <div class="project-title-row">
+              <h3>Hospital Management System</h3>
+              <span class="project-mini-icon">🏥</span>
             </div>
 
-            <h3>Hospital Management System</h3>
-
-            <p>
-              An object-oriented software system modeling hospital administration, departmental coordination, 
-              patient admissions, and persistent state management.
+            <p class="project-summary">
+              Modular Python OOP architecture modeling hospital department hierarchies, patient admissions, and robust transactional JSON file persistence.
             </p>
 
-            <ul>
-              <li>
-                <strong>Enterprise OOP Architecture:</strong> Designed clean class hierarchies for Doctors, Patients, Staff, Departments, and Admissions adhering to SOLID principles.
-              </li>
-              <li>
-                <strong>Data Persistence:</strong> Implemented robust file-based JSON serialization allowing reliable record restoration, updates, and transactional integrity.
-              </li>
-            </ul>
-
-            <div class="card-footer">
-              <a
-                class="project-link"
-                href="https://github.com/AAshrafR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Repository on GitHub ↗
-              </a>
+            <div class="tags">
+              <span>Python</span>
+              <span>OOP Architecture</span>
+              <span>SOLID</span>
+              <span>JSON State</span>
             </div>
           </div>
-          <div class="project-icon">🏥</div>
+
+          <div class="card-footer">
+            <span class="btn-card-details">
+              Case Study &amp; Problems <span class="arrow">→</span>
+            </span>
+            <div class="card-quick-links">
+              <span class="quick-link-pill">Live / Code</span>
+            </div>
+          </div>
         </article>
 
       </div>
     </section>
+
+    <!-- ================= PROJECT DETAILS MODAL ================= -->
+    <div id="projectModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-container">
+        <div class="modal-card">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div class="modal-badges">
+              <span id="modalBadge" class="card-badge">Project Highlight</span>
+              <span id="modalCategory" class="modal-cat-tag">Category</span>
+            </div>
+
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project details modal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Title and Tags -->
+          <div class="modal-title-area">
+            <h2 id="modalTitle">Project Title</h2>
+            <div class="tags" id="modalTags"></div>
+          </div>
+
+          <!-- Modal Body with Structured Sections -->
+          <div class="modal-body">
+            <!-- Problem Section -->
+            <div class="modal-section modal-problem-box">
+              <div class="section-title-wrap">
+                <span class="section-icon">⚠️</span>
+                <h4>The Challenge &amp; Problem Statement</h4>
+              </div>
+              <p id="modalProblem">Problem description...</p>
+            </div>
+
+            <!-- Solution Section -->
+            <div class="modal-section">
+              <div class="section-title-wrap">
+                <span class="section-icon">💡</span>
+                <h4>Technical Solution &amp; Architecture</h4>
+              </div>
+              <p id="modalSolution">Solution description...</p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="modal-section">
+              <div class="section-title-wrap">
+                <span class="section-icon">⚡</span>
+                <h4>Key Technical Implementation</h4>
+              </div>
+              <ul class="modal-features-list" id="modalFeatures"></ul>
+            </div>
+
+            <!-- Results & Impact -->
+            <div class="modal-section modal-results-box">
+              <div class="section-title-wrap">
+                <span class="section-icon">📈</span>
+                <h4>Results, Impact &amp; Metrics</h4>
+              </div>
+              <p id="modalResults">Results description...</p>
+            </div>
+          </div>
+
+          <!-- Modal Action Buttons (GitHub Code & Live Demo) -->
+          <div class="modal-footer">
+            <a id="modalGithubBtn" class="btn secondary modal-btn" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub Code ↗</span>
+            </a>
+
+            <a id="modalLiveBtn" class="btn primary modal-btn" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              <span>Live Demo / Preview ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ================= EDUCATION & DIPLOMAS ================= -->
     <section id="education" class="section education-section">
