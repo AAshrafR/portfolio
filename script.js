@@ -642,3 +642,36 @@ function initScrollReveal() {
 
 // Trigger reveal observer after DOM cards are injected
 initScrollReveal();
+
+// ========================================================
+// HERO CARD TABS (PROFILE / CODE PREVIEW)
+// ========================================================
+function initHeroTabs() {
+  const tabButtons = document.querySelectorAll(".hero-tab-btn");
+  const tabPanels = document.querySelectorAll(".hero-tab-panel");
+
+  if (tabButtons.length === 0 || tabPanels.length === 0) return;
+
+  tabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetTab = btn.getAttribute("data-tab");
+
+      tabButtons.forEach((b) => {
+        const isActive = b === btn;
+        b.classList.toggle("active", isActive);
+        b.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+
+      tabPanels.forEach((panel) => {
+        const panelId = panel.id;
+        const matches =
+          (targetTab === "profile" && panelId === "panelProfile") ||
+          (targetTab === "code" && panelId === "panelCode");
+        panel.classList.toggle("active", matches);
+      });
+    });
+  });
+}
+
+initHeroTabs();
+
