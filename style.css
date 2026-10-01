@@ -217,7 +217,11 @@ a {
 .navbar::before {
   content: "";
   position: absolute;
-  inset: 0 -100vw;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   z-index: -1;
 
   background: rgba(7, 9, 14, 0.85);
@@ -333,14 +337,16 @@ a {
 ========================================================= */
 
 .hero {
-  min-height: 100vh;
+  min-height: min(calc(100vh - 74px), 820px);
+  max-height: 860px;
 
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  gap: 40px;
+  gap: clamp(32px, 3.5vw, 60px);
 
-  padding-top: 125px;
+  padding-top: 110px;
+  padding-bottom: 40px;
 }
 
 .hero-copy h1 {
@@ -2111,6 +2117,7 @@ footer {
     grid-template-columns: 1fr;
 
     min-height: auto;
+    max-height: none;
     padding-top: 120px;
 
     gap: 36px;
@@ -2173,6 +2180,7 @@ footer {
 
   .hero {
     min-height: auto;
+    max-height: none;
 
     padding-top: 100px;
     padding-bottom: 60px;
@@ -2322,6 +2330,86 @@ footer {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+
+/* =========================================================
+   LARGE SCREENS / ZOOM-OUT RESPONSIVE ADAPTATION
+========================================================= */
+
+@media (min-width: 1440px) {
+  :root {
+    --max: 1360px;
+  }
+
+  .hero {
+    min-height: min(calc(100vh - 74px), 860px);
+    max-height: 900px;
+    gap: 56px;
+    padding-top: 120px;
+  }
+
+  .code-card {
+    width: min(500px, 100%);
+  }
+
+  .orb {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --max: 1520px;
+  }
+
+  .hero {
+    min-height: min(calc(100vh - 74px), 900px);
+    max-height: 940px;
+    gap: 68px;
+    padding-top: 130px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(48px, 4.4vw, 76px);
+  }
+
+  .hero-text {
+    max-width: 700px;
+    font-size: 18px;
+  }
+
+  .code-card {
+    width: min(540px, 100%);
+  }
+
+  .orb {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --max: 1720px;
+  }
+
+  .hero {
+    min-height: min(calc(100vh - 74px), 940px);
+    max-height: 980px;
+    gap: 80px;
+    padding-top: 140px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(54px, 4vw, 84px);
+  }
+
+  .hero-text {
+    max-width: 780px;
+    font-size: 19px;
   }
 }
 
