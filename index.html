@@ -110,41 +110,21 @@
         <div class="orb"></div>
         <div class="grid-lines"></div>
 
-        <!-- Tab switcher -->
-        <div class="hero-card-tabs" role="tablist">
-          <button class="hero-tab-btn active" data-panel="panelProfile" role="tab" aria-selected="true">👤 Profile</button>
-          <button class="hero-tab-btn" data-panel="panelCode" role="tab" aria-selected="false">💻 AlzCare AI</button>
-        </div>
-
-        <!-- Profile card panel -->
-        <div class="hero-tab-panel" id="panelProfile">
-          <div class="profile-card">
-            <div class="profile-image-wrap">
-              <img src="assets/profile.jpg" alt="Abdelmasih Ashraf" class="profile-photo" />
-              <div class="profile-gradient-scrim"></div>
-            </div>
-            <div class="profile-live-badge">
-              <span class="status-dot"></span> Available for roles
-            </div>
+        <!-- Direct Code Card (No Tabs Needed) -->
+        <div class="code-card">
+          <div class="code-top">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <small>alzcare_inference.py</small>
           </div>
-        </div>
 
-        <!-- Code card panel -->
-        <div class="hero-tab-panel" id="panelCode" style="display:none;">
-          <div class="code-card">
-            <div class="code-top">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-              <small>alzcare_inference.py</small>
-            </div>
-
-            <pre><code><span class="comment"># AlzCare: On-Device MRI Deep Learning</span>
+          <pre><code><span class="comment"># AlzCare: On-Device MRI Deep Learning</span>
 <span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf
 
 <span class="comment"># Load quantized CNN model for mobile edge</span>
 interpreter = tf.lite.Interpreter(
-    model_path=<span class="string">"alzheimer_cnn.tflite"</span>
+  model_path=<span class="string">"alzheimer_cnn.tflite"</span>
 )
 interpreter.allocate_tensors()
 
@@ -153,7 +133,6 @@ output = model.predict(preprocessed_mri)
 confidence = evaluate_confidence(output)
 
 <span class="comment"># Status: Grade A Capstone Completed</span></code></pre>
-          </div>
         </div>
 
         <div class="floating-chip chip-one">
@@ -162,12 +141,8 @@ confidence = evaluate_confidence(output)
         <div class="floating-chip chip-two">
           <span class="chip-dot"></span> MSc in AI (Benha)
         </div>
-        <div class="floating-chip chip-three">
-          <span class="chip-dot"></span> GPA 3.66 · Grade A
-        </div>
       </div>
     </section>
-
 
     <!-- ================= IMPACT METRICS (DYNAMIC) ================= -->
     <section class="section metrics-section">
@@ -177,7 +152,7 @@ confidence = evaluate_confidence(output)
     </section>
 
     <!-- ================= ABOUT ================= -->
-    <section id="about" class="section split">
+    <section id="about" class="section">
       <div class="section-heading reveal">
         <p class="eyebrow">01 — ABOUT ME</p>
         <h2>
@@ -186,43 +161,63 @@ confidence = evaluate_confidence(output)
         </h2>
       </div>
 
-      <div class="about-copy reveal">
-        <p>
-          I am an <strong>AI Master's Student at Benha University</strong> and a <strong>Teaching Assistant</strong> at the 
-          Faculty of Information Technology and Computing, Arab Open University Egypt. I hold a Bachelor of Computer Science 
-          with a <strong>3.66 GPA</strong>, graduating with a Grade A for my capstone project <em>AlzCare</em>.
-        </p>
-
-        <p>
-          My technical journey balances deep mathematical modeling with scalable software architecture. 
-          I specialize in <strong>Machine Learning and Deep Learning (CNNs, model quantization with TensorFlow Lite)</strong>, 
-          backed by extensive software engineering expertise in <strong>Native Android (Kotlin, MVVM, Room, Firebase)</strong> 
-          and full-stack development through the <strong>Information Technology Institute (ITI)</strong>.
-        </p>
-
-        <p>
-          Beyond research and development, I am deeply committed to education and mentorship. As a Teaching Assistant, 
-          I support undergraduate students in C# Programming, Computer Organization &amp; Architecture (CPU internal structure, 
-          cache hierarchies), and Web Technologies, mentoring them through rigorous debugging and algorithm design.
-        </p>
-
-        <!-- Quick Info Badges -->
-        <div class="about-info-grid">
-          <div class="info-item">
-            <span class="info-label">Location</span>
-            <span class="info-val">El Shorouk, Cairo, Egypt 📍</span>
+      <div class="about-container reveal">
+        <!-- Profile Picture Column -->
+        <div class="about-image-col">
+          <div class="profile-card">
+            <div class="profile-image-wrap">
+              <img src="assets/profile.jpg" alt="Abdelmasih Ashraf" class="profile-photo" />
+              <div class="profile-gradient-scrim"></div>
+            </div>
+            <div class="profile-live-badge">
+              <span class="status-dot"></span> Available for roles
+            </div>
           </div>
-          <div class="info-item">
-            <span class="info-label">Email</span>
-            <a href="mailto:aashrafr24@gmail.com" class="info-val link">aashrafr24@gmail.com</a>
+
+          <div class="floating-chip chip-about">
+            <span class="chip-dot"></span> GPA 3.66 · Grade A Capstone
           </div>
-          <div class="info-item">
-            <span class="info-label">Phone</span>
-            <a href="tel:+201228114566" class="info-val link">+20 122 811 4566</a>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Languages</span>
-            <span class="info-val">Arabic (Native) · English (Fluent)</span>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-copy">
+          <p>
+            I am an <strong>AI Master's Student at Benha University</strong> and a <strong>Teaching Assistant</strong> at the 
+            Faculty of Information Technology and Computing, Arab Open University Egypt. I hold a Bachelor of Computer Science 
+            with a <strong>3.66 GPA</strong>, graduating with a Grade A for my capstone project <em>AlzCare</em>.
+          </p>
+
+          <p>
+            My technical journey balances deep mathematical modeling with scalable software architecture. 
+            I specialize in <strong>Machine Learning and Deep Learning (CNNs, model quantization with TensorFlow Lite)</strong>, 
+            backed by extensive software engineering expertise in <strong>Native Android (Kotlin, MVVM, Room, Firebase)</strong> 
+            and full-stack development through the <strong>Information Technology Institute (ITI)</strong>.
+          </p>
+
+          <p>
+            Beyond research and development, I am deeply committed to education and mentorship. As a Teaching Assistant, 
+            I support undergraduate students in C# Programming, Computer Organization &amp; Architecture (CPU internal structure, 
+            cache hierarchies), and Web Technologies, mentoring them through rigorous debugging and algorithm design.
+          </p>
+
+          <!-- Quick Info Badges -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-val">El Shorouk, Cairo, Egypt 📍</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <a href="mailto:aashrafr24@gmail.com" class="info-val link">aashrafr24@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <a href="tel:+201228114566" class="info-val link">+20 122 811 4566</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Languages</span>
+              <span class="info-val">Arabic (Native) · English (Fluent)</span>
+            </div>
           </div>
         </div>
       </div>
