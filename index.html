@@ -110,15 +110,36 @@
         <div class="orb"></div>
         <div class="grid-lines"></div>
 
-        <div class="code-card">
-          <div class="code-top">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <small>alzcare_inference.py</small>
-          </div>
+        <!-- Tab switcher -->
+        <div class="hero-card-tabs" role="tablist">
+          <button class="hero-tab-btn active" data-panel="panelProfile" role="tab" aria-selected="true">👤 Profile</button>
+          <button class="hero-tab-btn" data-panel="panelCode" role="tab" aria-selected="false">💻 AlzCare AI</button>
+        </div>
 
-          <pre><code><span class="comment"># AlzCare: On-Device MRI Deep Learning</span>
+        <!-- Profile card panel -->
+        <div class="hero-tab-panel" id="panelProfile">
+          <div class="profile-card">
+            <div class="profile-image-wrap">
+              <img src="assets/profile.jpg" alt="Abdelmasih Ashraf" class="profile-photo" />
+              <div class="profile-gradient-scrim"></div>
+            </div>
+            <div class="profile-live-badge">
+              <span class="status-dot"></span> Available for roles
+            </div>
+          </div>
+        </div>
+
+        <!-- Code card panel -->
+        <div class="hero-tab-panel" id="panelCode" style="display:none;">
+          <div class="code-card">
+            <div class="code-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <small>alzcare_inference.py</small>
+            </div>
+
+            <pre><code><span class="comment"># AlzCare: On-Device MRI Deep Learning</span>
 <span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf
 
 <span class="comment"># Load quantized CNN model for mobile edge</span>
@@ -132,6 +153,7 @@ output = model.predict(preprocessed_mri)
 confidence = evaluate_confidence(output)
 
 <span class="comment"># Status: Grade A Capstone Completed</span></code></pre>
+          </div>
         </div>
 
         <div class="floating-chip chip-one">
@@ -145,6 +167,7 @@ confidence = evaluate_confidence(output)
         </div>
       </div>
     </section>
+
 
     <!-- ================= IMPACT METRICS (DYNAMIC) ================= -->
     <section class="section metrics-section">

@@ -654,7 +654,7 @@ function initHeroTabs() {
 
   tabButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const targetTab = btn.getAttribute("data-tab");
+      const targetPanelId = btn.getAttribute("data-panel");
 
       tabButtons.forEach((b) => {
         const isActive = b === btn;
@@ -663,15 +663,12 @@ function initHeroTabs() {
       });
 
       tabPanels.forEach((panel) => {
-        const panelId = panel.id;
-        const matches =
-          (targetTab === "profile" && panelId === "panelProfile") ||
-          (targetTab === "code" && panelId === "panelCode");
-        panel.classList.toggle("active", matches);
+        panel.style.display = panel.id === targetPanelId ? "" : "none";
       });
     });
   });
 }
 
 initHeroTabs();
+
 
